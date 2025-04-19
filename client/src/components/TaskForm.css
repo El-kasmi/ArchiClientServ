@@ -1,0 +1,67 @@
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border: 1px solid #334155; /* Bordure gris foncé */
+  border-radius: 8px;
+  background-color: #1e293b; /* Fond sombre */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  color: #f1f5f9; /* Texte clair */
+}
+
+.task-form-title {
+  font-size: 1.8rem;
+  color: #e2e8f0; /* Gris clair pour le titre */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.task-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.task-form-input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #475569; /* Bordure gris foncé */
+  border-radius: 4px;
+  background-color: #334155; /* Fond gris foncé */
+  color: #f1f5f9; /* Texte clair */
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.task-form-input:focus {
+  border-color: #2563eb; /* Bleu pour le focus */
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.5); /* Ombre bleue */
+}
+
+.task-form-button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #2563eb; /* Bleu pour le bouton */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.task-form-button:hover {
+  background-color: #1d4ed8; /* Bleu plus foncé au survol */
+  transform: scale(1.05);
+}
+
+.task-form-button:disabled {
+  background-color: #475569; /* Gris foncé pour le bouton désactivé */
+  cursor: not-allowed;
+}
+
+.task-form-button.submitting {
+  background-color: #6c757d; /* Gris foncé pendant la soumission */
+}

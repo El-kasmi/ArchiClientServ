@@ -1,0 +1,202 @@
+/* Style global */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0f172a; /* Fond sombre */
+  color: #f1f5f9; /* Texte clair */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%; /* Largeur 100% */
+}
+
+.App-header {
+  background-color: #1e293b; /* Fond sombre pour l'en-tête */
+  color: #e2e8f0; /* Texte clair */
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%; /* Largeur 100% */
+}
+
+/* Titres */
+h1, h2, h3 {
+  margin-top: 0;
+  color: #e2e8f0; /* Gris clair */
+}
+
+/* Styles pour les formulaires */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #1e293b; /* Fond sombre */
+  border-radius: 5px;
+  width: 100%; /* Largeur 100% */
+  max-width: 600px; /* Limite la largeur maximale */
+  color: #f1f5f9; /* Texte clair */
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #334155; /* Bordure gris foncé */
+  border-radius: 4px;
+  background-color: #334155; /* Fond gris foncé */
+  color: #f1f5f9; /* Texte clair */
+  outline: none;
+}
+
+input:focus {
+  border-color: #2563eb; /* Bleu pour le focus */
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.5); /* Ombre bleue */
+}
+
+/* Boutons globaux */
+button {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #2563eb; /* Bleu pour les boutons */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%; /* Largeur 100% pour les boutons */
+  max-width: 300px; /* Limite la largeur maximale */
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #1d4ed8; /* Bleu plus foncé au survol */
+}
+
+button:disabled {
+  background-color: #475569; /* Gris foncé pour les boutons désactivés */
+  cursor: not-allowed;
+}
+
+.cancel-button, .delete-button {
+  background-color: #dc2626; /* Rouge pour les boutons d'annulation ou suppression */
+}
+
+.cancel-button:hover, .delete-button:hover {
+  background-color: #b91c1c; /* Rouge plus foncé au survol */
+}
+
+/* Styles pour la liste des tâches */
+.task-list ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Largeur 100% */
+}
+
+.task-list li {
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: #1e293b; /* Fond sombre */
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s;
+  width: 100%; /* Largeur 100% */
+}
+
+.task-list li:hover {
+  background-color: #334155; /* Gris plus clair au survol */
+}
+
+.task-list li.completed {
+  background-color: #14532d; /* Vert foncé pour les tâches terminées */
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.task-title {
+  cursor: pointer;
+  flex: 1;
+  color: #f1f5f9; /* Texte clair */
+}
+
+.task-title:hover {
+  text-decoration: underline;
+}
+
+.task-status {
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #10b981; /* Vert pour le statut */
+}
+
+.task-actions {
+  display: flex;
+  gap: 5px;
+}
+
+/* Styles pour les détails de tâche */
+.task-detail {
+  background-color: #1e293b; /* Fond sombre */
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%; /* Largeur 100% */
+  max-width: 600px; /* Limite la largeur maximale */
+  color: #f1f5f9; /* Texte clair */
+}
+
+.task-info {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #334155; /* Fond gris foncé */
+  border-radius: 4px;
+}
+
+/* Messages d'erreur */
+.error {
+  color: #dc2626; /* Rouge pour les erreurs */
+  padding: 10px;
+  background-color: #1e293b; /* Fond sombre */
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+/* Animation de chargement */
+.task-detail-loading,
+.task-list-loading {
+  font-size: 1.2rem;
+  color: #94a3b8; /* Gris moyen */
+  text-align: center;
+  animation: fadeIn 1s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,55 @@
+.task-detail {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #1e293b; /* Fond sombre */
+  border: 1px solid #334155; /* Bordure gris foncé */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  color: #f1f5f9; /* Texte clair */
+}
+
+.task-detail-title {
+  font-size: 1.8rem;
+  color: #e2e8f0; /* Gris clair pour le titre */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.task-info {
+  font-size: 1rem;
+  color: #cbd5e1; /* Gris clair pour le texte */
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.task-info p {
+  margin: 0.5rem 0;
+}
+
+.task-detail-loading,
+.task-detail-error,
+.task-detail-not-found {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #94a3b8; /* Gris moyen */
+}
+
+.task-detail-back-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #2563eb; /* Bleu pour le bouton */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.task-detail-back-button:hover {
+  background-color: #1d4ed8; /* Bleu plus foncé au survol */
+  transform: scale(1.05);
+}

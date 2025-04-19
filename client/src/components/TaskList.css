@@ -1,0 +1,107 @@
+.task-list {
+  width: 600px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background-color: #1e293b; /* Fond sombre */
+  border: 1px solid #334155; /* Bordure gris foncé */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  color: #f1f5f9; /* Texte clair */
+}
+
+.task-list-title {
+  font-size: 1.8rem;
+  color: #e2e8f0; /* Gris clair pour le titre */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.task-list-loading,
+.task-list-error,
+.task-list-empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #94a3b8; /* Gris moyen */
+}
+
+.task-list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #475569; /* Bordure gris foncé */
+  border-radius: 4px;
+  background-color: #334155; /* Fond gris foncé */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.task-item:hover {
+  background-color: #475569; /* Gris plus clair au survol */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.task-item.completed {
+  background-color: #14532d; /* Vert foncé pour les tâches terminées */
+}
+
+.task-item-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.task-item-title {
+  font-size: 1rem;
+  color: #f1f5f9; /* Texte clair */
+  cursor: pointer;
+}
+
+.task-item-title:hover {
+  text-decoration: underline;
+}
+
+.task-item-status {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #10b981; /* Vert pour le statut */
+}
+
+.task-item-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.task-item-edit,
+.task-item-delete {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.task-item-edit {
+  background-color: #2563eb; /* Bleu pour le bouton Modifier */
+  color: #fff;
+}
+
+.task-item-edit:hover {
+  background-color: #1d4ed8; /* Bleu plus foncé au survol */
+}
+
+.task-item-delete {
+  background-color: #dc2626; /* Rouge pour le bouton Supprimer */
+  color: #fff;
+}
+
+.task-item-delete:hover {
+  background-color: #b91c1c; /* Rouge plus foncé au survol */
+}
