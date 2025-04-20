@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #0f172a; /* Fond sombre */
+  background-color: #53617e; /* Fond sombre */
   color: #f1f5f9; /* Texte clair */
 }
 
@@ -14,11 +14,11 @@ body {
 }
 
 .App-header {
-  background-color: #1e293b; /* Fond sombre pour l'en-tête */
+  background-color: #5a6579; /* Fond sombre pour l'en-tête */
   color: #e2e8f0; /* Texte clair */
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+ 
 }
 
 .App-header h1 {
@@ -49,7 +49,7 @@ form {
   gap: 10px;
   margin-bottom: 20px;
   padding: 15px;
-  background-color: #1e293b; /* Fond sombre */
+  background-color: #9aa0ab; /* Fond gris */
   border-radius: 5px;
   width: 100%; /* Largeur 100% */
   max-width: 600px; /* Limite la largeur maximale */
@@ -58,9 +58,9 @@ form {
 
 input {
   padding: 8px;
-  border: 1px solid #334155; /* Bordure gris foncé */
-  border-radius: 4px;
-  background-color: #334155; /* Fond gris foncé */
+  border: 1px solid #485c76; /* Bordure gris foncé */
+  border-radius: 5px;
+  background-color: #abadae; /* Fond gris clair */
   color: #f1f5f9; /* Texte clair */
   outline: none;
 }
@@ -74,10 +74,10 @@ input:focus {
 button {
   font-size: 1rem;
   padding: 0.75rem 1rem;
-  background-color: #2563eb; /* Bleu pour les boutons */
+  background-color: #0b3183da; /* Bleu pour les boutons */
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
   width: 100%; /* Largeur 100% pour les boutons */
@@ -86,20 +86,20 @@ button {
 
 button:hover {
   transform: scale(1.05);
-  background-color: #1d4ed8; /* Bleu plus foncé au survol */
+  background-color: #2e5cdc; /* Bleu plus foncé au survol */
 }
 
 button:disabled {
-  background-color: #475569; /* Gris foncé pour les boutons désactivés */
+  background-color: #475569; /* Gris clair pour les boutons désactivés */
   cursor: not-allowed;
 }
 
 .cancel-button, .delete-button {
-  background-color: #dc2626; /* Rouge pour les boutons d'annulation ou suppression */
+  background-color: #630505; /* Rouge pour les boutons d'annulation ou suppression */
 }
 
 .cancel-button:hover, .delete-button:hover {
-  background-color: #b91c1c; /* Rouge plus foncé au survol */
+  background-color: #782a2a; /* Rouge plus foncé au survol */
 }
 
 /* Styles pour la liste des tâches */
@@ -112,8 +112,8 @@ button:disabled {
 .task-list li {
   padding: 12px;
   margin-bottom: 8px;
-  background-color: #1e293b; /* Fond sombre */
-  border-radius: 4px;
+  background-color: #565c65; /* gris */
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,7 +126,7 @@ button:disabled {
 }
 
 .task-list li.completed {
-  background-color: #14532d; /* Vert foncé pour les tâches terminées */
+  background-color: #61a67c; /* Vert pour les tâches terminées */
 }
 
 .task-content {
@@ -149,7 +149,7 @@ button:disabled {
 .task-status {
   cursor: pointer;
   font-size: 1.2em;
-  color: #10b981; /* Vert pour le statut */
+  color: #50bb97; /* Vert pour le statut */
 }
 
 .task-actions {
@@ -159,7 +159,7 @@ button:disabled {
 
 /* Styles pour les détails de tâche */
 .task-detail {
-  background-color: #1e293b; /* Fond sombre */
+  background-color: #8c8e92; /* Fond gris */
   padding: 20px;
   border-radius: 5px;
   width: 100%; /* Largeur 100% */
@@ -171,7 +171,7 @@ button:disabled {
   margin: 15px 0;
   padding: 15px;
   background-color: #334155; /* Fond gris foncé */
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 /* Messages d'erreur */

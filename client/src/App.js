@@ -79,7 +79,7 @@ function App() {
     <div className="App">
       {/* En-tête de l'application */}
       <header className="App-header">
-        <h1>Gestionnaire de Tâches</h1>
+        <h1>Architechture Client-Serveur</h1>
       </header>
 
       {/* Contenu principal */}

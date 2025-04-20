@@ -1,5 +1,5 @@
 .task-list {
-  width: 600px;
+  width: 580px;
   margin: 0 auto;
   padding: 2.5rem;
   background-color: #1e293b; /* Fond sombre */
@@ -48,7 +48,7 @@
 }
 
 .task-item.completed {
-  background-color: #14532d; /* Vert foncé pour les tâches terminées */
+  background-color: #4b8261; /* Vert foncé pour les tâches terminées */
 }
 
 .task-item-content {
@@ -70,7 +70,7 @@
 .task-item-status {
   font-size: 1.2rem;
   cursor: pointer;
-  color: #10b981; /* Vert pour le statut */
+  color: #45d9a8; /* Vert pour le statut */
 }
 
 .task-item-actions {
@@ -89,19 +89,19 @@
 }
 
 .task-item-edit {
-  background-color: #2563eb; /* Bleu pour le bouton Modifier */
-  color: #fff;
+  background-color: #0d3690; /* Bleu fonce pour le bouton Modifier */
+  color: #f2eaea;
 }
 
 .task-item-edit:hover {
-  background-color: #1d4ed8; /* Bleu plus foncé au survol */
+  background-color: #3668ef; /* Bleu clair plus foncé au survol */
 }
 
 .task-item-delete {
-  background-color: #dc2626; /* Rouge pour le bouton Supprimer */
-  color: #fff;
+  background-color: #960707; /* Rouge foncee pour le bouton Supprimer */
+  color: #f2eaea;
 }
 
 .task-item-delete:hover {
-  background-color: #b91c1c; /* Rouge plus foncé au survol */
+  background-color: #dc4c4c; /* Rouge clair plus foncé au survol */
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { taskService } from '../services/api';
-import './TaskDetail.css'; // Assurez-vous de créer ce fichier CSS
+import './TaskDetail.css'; //  fichier CSS
 
 const TaskDetail = ({ taskId, onBack }) => {
   const [task, setTask] = useState(null);

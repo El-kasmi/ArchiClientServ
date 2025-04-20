@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { taskService } from '../services/api';
-import './TaskList.css'; // Assurez-vous de créer ce fichier CSS
+import './TaskList.css'; // fichier CSS
 
 const TaskList = ({ onEditTask, onViewTask }) => {
   const [tasks, setTasks] = useState([]);
@@ -41,7 +41,7 @@ const TaskList = ({ onEditTask, onViewTask }) => {
 
   return (
     <div className="task-list">
-      <h2 className="task-list-title">Liste des tâches</h2>
+      <h2 className="task-list-title">Liste des Tâches</h2>
       {tasks.length === 0 ? (
         <p className="task-list-empty">Aucune tâche disponible</p>
       ) : (
